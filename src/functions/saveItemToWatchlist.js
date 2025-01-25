@@ -10,13 +10,13 @@ export const saveItemToWatchlist = (e, id) => {
       toast.success(
         `${
           id.substring(0, 1).toUpperCase() + id.substring(1)
-        } - added to the watchlist`
+        } - izleme listesine eklendi`
       );
     } else {
       toast.error(
         `${
           id.substring(0, 1).toUpperCase() + id.substring(1)
-        } - is already added to the watchlist!`
+        } - zaten izleme listesinde`
       );
     }
   } else {
@@ -24,7 +24,7 @@ export const saveItemToWatchlist = (e, id) => {
     toast.success(
       `${
         id.substring(0, 1).toUpperCase() + id.substring(1)
-      } - added to the watchlist`
+      } - izleme listesine eklendi`
     );
   }
   localStorage.setItem("watchlist", JSON.stringify(watchlist));
