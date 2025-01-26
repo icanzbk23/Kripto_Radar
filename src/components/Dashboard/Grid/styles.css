@@ -6,7 +6,7 @@
   padding: 2rem;
   background-color: var(--darkgrey);
   border-radius: 0.8rem;
-  border: 2px solid var(--darkgrey);
+  border: 2px solid var(--grey);
   cursor: pointer;
 }
 
