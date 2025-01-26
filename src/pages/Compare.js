@@ -43,7 +43,7 @@ function Compare() {
       settingCoinObject(data1, setCoin1Data);
       settingCoinObject(data2, setCoin2Data);
       if (data1 && data2) {
-        // getPrices
+        // Fiyatı al
         const prices1 = await getPrices(crypto1, days, priceType);
         const prices2 = await getPrices(crypto2, days, priceType);
         settingChartData(setChartData, prices1, prices2);
@@ -56,23 +56,23 @@ function Compare() {
     setLoading(true);
     if (isCoin2) {
       const newCrypto2 = e.target.value;
-      // crypto2 is being changed
+      // Kripto2 değişti
       setCrypto2(newCrypto2);
-      // fetch coin2 data
+      // fetch kripto2 verisi
       const data2 = await getCoinData(newCrypto2);
       settingCoinObject(data2, setCoin2Data);
-      // fetch prices again
+      // fetch fiyat tekrar
       const prices1 = await getPrices(crypto1, days, priceType);
       const prices2 = await getPrices(newCrypto2, days, priceType);
       settingChartData(setChartData, prices1, prices2);
     } else {
       const newCrypto1 = e.target.value;
-      // crypto1 is being changed
+      // Kripto1 değişti
       setCrypto1(newCrypto1);
-      // fetch coin1 data
+      // fetch kripto1 verisi
       const data1 = await getCoinData(newCrypto1);
       settingCoinObject(data1, setCoin1Data);
-      // fetch coin prices
+      // fetch kripto fiyatı
       const prices1 = await getPrices(newCrypto1, days, priceType);
       const prices2 = await getPrices(crypto2, days, priceType);
       settingChartData(setChartData, prices1, prices2);
