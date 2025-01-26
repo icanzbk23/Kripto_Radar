@@ -23,7 +23,7 @@ function Compare() {
   const [coin2Data, setCoin2Data] = useState({});
   // days state
   const [days, setDays] = useState(30);
-  const [priceType, setPriceType] = useState("prices");
+  const [priceType, setPriceType] = useState("fiyatlar");
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [],

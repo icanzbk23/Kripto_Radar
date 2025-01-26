@@ -6,7 +6,7 @@ export const settingChartData = (setChartData, prices1, prices2) => {
       labels: prices1?.map((data) => gettingDate(data[0])),
       datasets: [
         {
-          label: "Crypto 1",
+          label: "1.Kripto",
           data: prices1?.map((data) => data[1]),
           borderWidth: 1,
           fill: false,
@@ -17,7 +17,7 @@ export const settingChartData = (setChartData, prices1, prices2) => {
           yAxisID: "crypto1",
         },
         {
-          label: "Crypto 2",
+          label: "2.Kripto",
           data: prices2?.map((data) => data[1]),
           borderWidth: 1,
           fill: false,

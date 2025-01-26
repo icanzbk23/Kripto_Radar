@@ -30,7 +30,7 @@ function SelectCoins({
   return (
     <div className="select-coins-div">
       <div className="select-flex">
-        <p>Crypto 1</p>
+        <p>1.Kripto</p>
         <Select
           value={crypto1}
           onChange={(e) => onCoinChange(e, false)}
@@ -46,7 +46,7 @@ function SelectCoins({
         </Select>
       </div>
       <div className="select-flex">
-        <p>Crypto 2</p>
+        <p>2.Kripto</p>
         <Select
           value={crypto2}
           onChange={(e) => onCoinChange(e, true)}
