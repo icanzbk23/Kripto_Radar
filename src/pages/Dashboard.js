@@ -17,7 +17,7 @@ function Dashboard() {
   const [paginatedCoins, setPaginatedCoins] = useState([]);
 
   useEffect(() => {
-    // Get 100 Coins
+    //  100 Coini al
     getData();
   }, []);
 

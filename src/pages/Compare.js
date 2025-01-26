@@ -15,15 +15,15 @@ import { settingCoinObject } from "../functions/settingCoinObject";
 function Compare() {
   const [allCoins, setAllCoins] = useState([]);
   const [loading, setLoading] = useState(false);
-  // id states
+  // id durumu
   const [crypto1, setCrypto1] = useState("bitcoin");
   const [crypto2, setCrypto2] = useState("ethereum");
-  // data states
+  // data durumu
   const [coin1Data, setCoin1Data] = useState({});
   const [coin2Data, setCoin2Data] = useState({});
-  // days state
+  // günlerin durumu
   const [days, setDays] = useState(30);
-  const [priceType, setPriceType] = useState("fiyatlar");
+  const [priceType, setPriceType] = useState("prices");
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [],
